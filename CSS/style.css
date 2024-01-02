@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+   /* NAV */
+nav {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    padding: 10px 30px;
+    border-bottom: #8c52ff 1px solid;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.219);
+    position: fixed;
+    z-index: 999;
+    background-color: beige;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 35px;
+    position: relative;
+}
+
+.r, .s {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+.r {
+    z-index: 1;
+}
+
+.s {
+    z-index: 2;
+    color: #8c52ff;
+    transform: translateX(35%);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* sections */
+/* so para teste por enquanto */
+
+#sobre {
+    margin-top: 60px;
+    height: 30px;
+    background-color: aqua;
+}
