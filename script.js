@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            smoothScroll.call(this, e);
+            e.preventDefault(); // Impedir o comportamento padrão do link
+            smoothScroll.call(this);
             if (nav.classList.contains('show')) {
                 nav.classList.remove('show');
             }
@@ -18,15 +19,17 @@ document.addEventListener("DOMContentLoaded", function() {
         nav.classList.toggle('show');
     }
 
-    function smoothScroll(e) {
-        e.preventDefault();
-        
+    function smoothScroll() {
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
-        window.scrollTo({
-            top: targetElement.offsetTop - document.querySelector('nav').offsetHeight,
-            behavior: 'smooth'
-        });
+        if (targetElement) {
+            const navHeight = document.querySelector('nav').offsetHeight;
+            
+            window.scrollTo({
+                top: targetElement.offsetTop - navHeight,
+                behavior: 'smooth'
+            });
+        }
     }
 });

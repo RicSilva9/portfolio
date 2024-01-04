@@ -39,6 +39,7 @@ nav {
     left: 0;
     margin: 0;
     font-size: 2em;
+    cursor: default;
 }
 
 .r {
@@ -64,6 +65,12 @@ li {
 a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8c52ff;
+    text-decoration: underline;
 }
 
 /* sections */
