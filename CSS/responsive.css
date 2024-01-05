@@ -1,5 +1,24 @@
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 730px) {
     nav {
         padding: 10px 15px;
+    }
+
+    .links li {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
     }
 }

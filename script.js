@@ -1,31 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('nav a');
-    const mobileMenuToggle = document.querySelector('#mobile-menu .menu-toggle');
-    const nav = document.querySelector('nav ul');
-
-    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault(); // Impedir o comportamento padrão do link
-            smoothScroll.call(this);
-            if (nav.classList.contains('show')) {
-                nav.classList.remove('show');
-            }
-        });
-    });
-
-    function toggleMobileMenu() {
-        nav.classList.toggle('show');
-    }
-
+document.addEventListener("DOMContentLoaded", function () { 
     function smoothScroll() {
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
             const navHeight = document.querySelector('nav').offsetHeight;
-            
+
             window.scrollTo({
                 top: targetElement.offsetTop - navHeight,
                 behavior: 'smooth'
@@ -33,3 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = toggleBtn.querySelector('i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open');
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.className = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars';
+};
