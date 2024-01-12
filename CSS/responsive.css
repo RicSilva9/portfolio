@@ -36,6 +36,8 @@
     }
 
     .dropdown_menu {
+        z-index: 999;
+        position: fixed;
         display: block;
     }
 
