@@ -36,7 +36,7 @@ header nav {
 
     position: fixed;
     z-index: 999;
-    background-color: beige;
+    background-color: var(--color-0);
 }
 
     /* ITENS NAVBAR */
