@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () { 
-    function smoothScroll() {
+    function smoothScroll(event) {
+        event.preventDefault();
+
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
@@ -12,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
+    const navLinks = document.querySelectorAll('header a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', smoothScroll);
+    });
 });
 
 const toggleBtn = document.querySelector('.toggle_btn');

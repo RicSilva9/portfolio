@@ -111,7 +111,7 @@
     }
     
     article.informacoes h2 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     article.informacoes p {
@@ -133,5 +133,14 @@
 
     .sobre {
         padding: 100px 20px;
+    }
+
+    .habilidades h2 {
+        font-size: 1.5em;
+    }
+
+    .habilidadesEmAprendizado img, .habilidadesConquistadas img {
+        max-height: 50px;
+        top: -35%;
     }
 }
