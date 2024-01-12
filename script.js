@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    const navLinks = document.querySelectorAll('header a');
+    const navLinks = document.querySelectorAll('#nav1 a, #nav a');
     navLinks.forEach(link => {
         link.addEventListener('click', smoothScroll);
     });
