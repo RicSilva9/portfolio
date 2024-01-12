@@ -44,7 +44,7 @@
     }
 
     article.informacoes {
-        height: 500px;
+        height: 380px;
     }
 
     article.informacoes h1 {
@@ -70,6 +70,23 @@
         height: 150px;
         border-radius: 50%;
     }
+
+    .sobre {
+        height: 700px;
+    }
+
+    .informacoes-bg {
+        height: 400px;
+    }
+
+    .sobre h2 {
+        font-size: 1.5em;
+    }
+
+    .sobre p {
+        font-size: 1em;
+        margin-top: 15px;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -84,6 +101,7 @@
 
     article.informacoes {
         padding: 0;
+        height: 380px;
     }
 
     article.informacoes h1 {
@@ -104,5 +122,14 @@
 
     article.informacoes button a {
         padding: 0;
+    }
+
+    .informacoes-bg {
+        padding: 25px 25px;
+        height: 470px;
+    }
+
+    .sobre {
+        padding: 100px 20px;
     }
 }
