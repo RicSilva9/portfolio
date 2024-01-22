@@ -155,31 +155,23 @@ article.informacoes p {
     margin-top: -10px;
 }
 
-article.informacoes button {
-    padding: 15px 0px;
-    width: 150px;
+article.informacoes a {
+    padding: 20px 30px;
+    width: 160px;
     font-size: 1.2em;
     background-color: var(--color-1);
-    border: none;
     margin: 30px;
     border-radius: 20px;
     transition: all 0.5s;
+    text-decoration: none;
+    color: var(--color-0);
+    display: inline-block;
 }
 
-article.informacoes button:hover {
+article.informacoes a:hover {
     background-color: var(--color-2);
     color: black;
     box-shadow: 0px 0px 20px var(--color-1);
-}
-
-article.informacoes button a {
-    text-decoration: none;
-    color: var(--color-0);
-    padding: 20px 30px;
-}
-
-article.informacoes button a:hover {
-    color: black;
 }
 
 article.informacoes h2 {
