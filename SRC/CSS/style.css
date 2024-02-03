@@ -14,6 +14,7 @@ h1, h2, h3, p {
 body {
     font-family: 'Poppins', sans-serif;
     padding: 70px 0px;
+    background-color: #000;
 }
 
 :root {
@@ -32,7 +33,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.219);
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.337);
 
     position: fixed;
     z-index: 999;
@@ -102,7 +103,7 @@ header nav ul li a:hover {
     top: 60px;
     width: 300px;
     height: 0;
-    background: rgba(0, 0, 0, 0.473);
+    background: rgba(13, 0, 18, 0.473);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -128,7 +129,7 @@ header nav ul li a:hover {
 
 
 /* Perfil */
-.perfil{
+/* .perfil{
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
@@ -193,10 +194,10 @@ article.fotoDePerfil {
     border-radius: 150px 0px 150px 0px;
     border: 2px solid var(--color-1);
     box-shadow: 0px 5px 40px var(--color-2);
-}
+} */
 
 /* SOBRE */
-.sobre {
+/* .sobre {
     background-color: var(--color-1);
     background-image: url(../SRC/IMG/bg-bio.jpeg);
     background-repeat: no-repeat;
@@ -236,7 +237,7 @@ article.fotoDePerfil {
 
 /* HABILIDAES */
 
-.habilidades {
+/* .habilidades {
     width: 100%;
     height: 600px;
     margin: 200px 0px 0px 0px;
@@ -276,4 +277,4 @@ article.fotoDePerfil {
 
 .habilidadesConquistadas img:hover {
     transform: scale(1.2);
-}
+} */
