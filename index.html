@@ -10,7 +10,8 @@
     <!-- styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <link rel="stylesheet" href="./SRC/CSS/style.css">
+    <link rel="stylesheet" href="./SRC/CSS/header.css">
+    <link rel="stylesheet" href="./SRC/CSS/skills-certificados.css">
     <link rel="stylesheet" href="./SRC/CSS/responsive.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
             </span>
             <ul class="links" id="nav1">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#habilidades">Skills</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
@@ -33,53 +34,182 @@
 
         <div class="dropdown_menu" id="nav">
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#habilidades">Skills</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contatos">Contatos</a></li>
         </div>
-    </header>
-<!-- 
-    <section class="perfil">
-        <article class="informacoes">
-            <h1>Olá, visitante! Eu sou o <span>Ricardo.</span></h1>
-            <p>Desenvolvedor web Front-End.</p>
-            <a href="#">Baixar CV</a>
-            <a href="https://www.linkedin.com/in/ricardo-dev13/" target="_blank">LinkedIn</a>
-            <h2 id="colorChangingHeading">Bem Vindo(a)!!</h2>
-        </article>
 
-        <article class="fotoDePerfil">
-            <img src="./SRC/IMG/foto_perfil.jpeg" alt="Foto do rosto do ricardo, ele usa uma camisa de gola alta vermelhar e o fundo branco" class="profile-picture">
-        </article>
-    </section>
-
-    <main>
-        <section id="sobre" class="sobre">
-            <div class="informacoes-bg"> -->
-                <!-- <h2>Sobre:</h2>
-                <p>Olá! Eu sou Ricardo da Silva Sousa, um entusiasta de programação de 17 anos. Iniciei meu caminho na área em 2021 durante a Imersão Dev da Alura, mas somente em 2023 passei a me dedicar ativamente aos estudos. Recentemente, concluí o ensino médio e planejo ingressar na faculdade em breve. Meu objetivo é me tornar um excelente desenvolvedor front-end, buscando constantemente aprimorar minhas habilidades e contribuir para projetos inovadores.</p>
+        <section class="perfil" id="sobre">
+            <article class="fotoDePerfil">
+                <img src="./SRC/IMG/foto_perfil.jpeg" alt="Foto do rosto do ricardo, ele usa uma camisa de gola alta vermelhar e o fundo branco" class="profile-picture">
+            </article>
+            
+            <div class="sobre">
+                <article class="informacoes">
+                    <h1>Olá! Eu sou o <span>Ricardo.</span></h1>
+                    <p>Desenvolvedor web Front-End.</p>
+                </article>
+                
+                <div class="sobre-mim">
+                    <p>Oiii, me chamo Ricardo da Silva Sousa, sou um estudante de programação de 17 anos. Meu primeiro contato com a programação foi em 2021 durante a Imersão Dev da Alura, mas somente em 2023 passei a me dedicar ativamente aos estudos. Estudo Análise e Desenvolvimento de Sistemas na Estácio e meu objetivo é me tornar um excelente desenvolvedor, buscando constantemente aprimorar minhas habilidades e contribuir para projetos inovadores.</p>
+                </div>
             </div>
         </section>
-        
-        <section id="habilidades" class="habilidades">
-            <h2>Habilidades Conquistadas;</h2>
-            <article class="habilidadesConquistadas">
-                <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><img src="./SRC/IMG/html.png" alt="HTML5 Semantico"></a>
-                <a href="https://www.w3schools.com/css/default.asp" target="_blank"><img src="./SRC/IMG/css-3.png" alt="CSS3"></a>
-                <a href="https://www.w3schools.com/js/default.asp" target="_blank"><img src="./SRC/IMG/JavaScript.png" alt="JavaScript"></a>
-            </article>
-            <h2>Habilidades em Aprendizado;</h2>
-            <article class="habilidadesEmAprendizado">
-                <a href="https://www.w3schools.com/typescript/index.php" target="_blank"><img src="./SRC/IMG/ts.jpeg" alt="Typescript"></a>
-                <a href="https://tailwindcss.com/" target="_blank"><img src="./SRC/IMG/tailwind.jpeg" alt="Tailwind"></a>
-                <a href="https://www.w3schools.com/angular/default.asp" target="_blank"><img src="./SRC/IMG/Angular.png" alt="Angular"></a>
-            </article>
-        </section>
+    
+    </header>
+    <main>
+            <div class="sessao-conquistas">
+                <section id="habilidades" class="habilidades">
+                    <section class="header">
+                        <div><span class="sair-das-skills">X</span></div>
+                        <h2>Skills</h2>
+                    </section>
+                    <section class="main">
+                        <div class="explicacao">
+                            <ul>
+                                <li>XP = experience points (pontos de experiência).</li>
+                                <li><div></div> = 20xp</li>
+                                <li>blur = Bloquada</li>
+                            </ul>
+                        </div>
+                        <div class="XP">
+                            <h3>14XP</h3>
+                        </div>
+                        <div class="tecnologias">
+                            <ul>
+                                <li class="desbloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/html.png" alt="">
+                                        <p>HTML</p>
+                                        <div class="pontosDeXP">
+                                            <div class="pontos"></div>
+                                            <div class="pontos"></div>
+                                            <div class="pontos"></div>
+                                            <div class="pontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="desbloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/css-3.png" alt="">
+                                        <p>CSS</p>
+                                        <div class="pontosDeXP">
+                                            <div class="pontos"></div>
+                                            <div class="pontos"></div>
+                                            <div class="pontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="desbloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/JavaScript.png" alt="">
+                                        <p>JS</p>
+                                        <div class="pontosDeXP">
+                                            <div class="pontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/tailwind.jpeg" alt="">
+                                        <p>tailwind</p>
+                                        <div class="pontosDeXP">
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/bootstrap.png" alt="">
+                                        <p>Bootstrap</p>
+                                        <div class="pontosDeXP">
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/ts.jpeg" alt="">
+                                        <p>Typescript</p>
+                                        <div class="pontosDeXP">
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/Angular.png" alt="">
+                                        <p>Angular</p>
+                                        <div class="pontosDeXP">
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/nodejs.png" alt="">
+                                        <p>NodeJS</p>
+                                        <div class="pontosDeXP">
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bloqueadas">
+                                    <div class="ferramentas">
+                                        <img src="./SRC/IMG/ruby.png" alt="">
+                                        <p>Ruby</p>
+                                        <div class="pontosDeXP">
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                            <div class="sempontos"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="slider">
+
+
+                </section>
+            </div>
 
         <section id="projetos">
         </section>
         
     </main>
+    <!-- 
 
     <footer>
         <section id="contatos">

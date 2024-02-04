@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+    cursor: default;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 0px;
+    background-color: #000;
+}
+
+:root {
+    --color-0: #fff;
+    --color-1: #8c52ff;
+    --color-2: yellow;
+    --color-3: #000;
+}
+
+   /* HEADER */
+header nav {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.281);
+    
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.661);
+    backdrop-filter: blur(15px);
+}
+
+    /* ITENS NAVBAR */
+.logo {
+    font-family: 'Roboto', sans-serif;
+    width: 35px;
+    position: relative;
+}
+
+.r, .s {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: default;
+    transform: translateY(-50%);
+}
+
+.r {
+    z-index: 1;
+    color: var(--color-0);
+}
+
+.s {
+    z-index: 2;
+    color: var(--color-1);
+    margin-left: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+} 
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-0);
+    transition: color 0.3s;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: var(--color-1);
+    text-decoration: underline;
+}
+
+.toggle_btn {
+    font-size: 1.3em;
+    cursor: pointer;
+    display: none;
+    color: var(--color-0);
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(13, 0, 18, 0.473);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 200px;
+}
+
+.dropdown_menu li {
+    list-style: none;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: var(--color-0);
+}
+
+/* Perfil */
+.perfil{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 10px 30px;
+    height: 750px;
+    background-image: url(../IMG/bg-header.jpg);
+    background-size: cover;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(134, 1, 134, 0.371);
+    border-radius: 0px 0px 40px 40px;
+}
+
+.perfil .sobre .informacoes {
+    text-align: center;
+}
+
+article.informacoes h1 {
+    color: var(--color-0);
+    font-size: 2rem;
+}
+
+article.informacoes h1 span {
+    color: var(--color-1);
+}
+
+article.informacoes p {
+    color: #888585;
+}
+
+.perfil .fotoDePerfil .profile-picture {
+    box-shadow: 0px 0px 20px var(--color-1);
+    max-height: 350px;
+    border-radius: 20% 0 20% 0;
+}
+
+.perfil .sobre-mim {
+    background-color: rgba(29, 16, 29, 0.409);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.perfil .sobre-mim p {
+    font-family: "Fira Code", monospace;
+    color: #c38fe9;
+    text-indent: 20px;
+}
