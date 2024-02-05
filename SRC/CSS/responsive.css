@@ -1,8 +1,12 @@
+@media only screen and (max-width: 1000px) {
+    .sessao-conquistas {
+        flex-direction: column;
+        height: 900px;
+    }
+}
+
 @media only screen and (max-width: 835px) {
     /* NAV */
-    nav {
-        padding: 10px 15px;
-    }
 
     .links li {
         display: none;
@@ -10,6 +14,7 @@
 
     .toggle_btn {
         display: block;
+        margin: 15px 20px 0 0;
     }
 
     .dropdown_menu {
@@ -20,12 +25,15 @@
 
     /* HEADER */
     .perfil {
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
         min-height: 850px;
         background-image: url(../IMG/bg-header-smartphone.jpg);
         padding-top: 50px;
+    }
+
+    .perfil .div {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
     }
 
     .perfil .fotoDePerfil .profile-picture {

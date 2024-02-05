@@ -40,27 +40,28 @@
     padding: 0 30px;
 }
 
-.main .explicacao ul li {
-    color: rgb(85, 133, 175);
-    font-weight: 700;
-    margin: 10px 5px 10px 15px;
+.explicacao ul li {
     display: flex;
     list-style: none;
+    color: rgb(85, 133, 175);
+    font-weight: 700;
+    font-size: 12PX;
+    margin: 10px 5px 10px 15px;
 }
 
-.main .explicacao ul li div {
+.explicacao ul li div {
     width: 10px;
     height: 16px;
     background-color: aqua;
     margin-right: 10px;
 }
 
-.main .XP {
+.XP {
     display: flex;
     justify-content: end;
 }
 
-.main .XP h3 {
+.XP h3 {
     color: aqua;
     text-align: center;
     font-weight: bolder;
@@ -89,6 +90,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 15px;
+}
+
+.tecnologias .divisao-das-habilidades {
+    padding: 20px;
+    color: rgb(85, 133, 175);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: rgba(40, 36, 67, 0.586);
 }
 
 .tecnologias ul li {
@@ -134,4 +143,15 @@
 }
 
 /* slider */
+.slider {
+}
 
+/* espacamento */
+
+.sessao-conquistas {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    height: 750px;
+    align-items: center;
+}

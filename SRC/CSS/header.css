@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 * {
@@ -17,16 +17,20 @@ li {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Sora", sans-serif;
     padding: 60px 0px;
-    background-color: #000;
+    background-color: #0f0f0f;
 }
 
 :root {
     --color-0: #fff;
     --color-1: #8c52ff;
     --color-2: yellow;
-    --color-3: #000;
+    --color-3: #1F1F1F;
+}
+
+ion-icon {
+    margin: 0 5px;
 }
 
    /* HEADER */
@@ -35,20 +39,25 @@ header nav {
     height: 60px;
     top: 0;
     padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.281);
-    
     position: fixed;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.661);
     backdrop-filter: blur(15px);
 }
 
+nav div {
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
     /* ITENS NAVBAR */
 .logo {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Sora", sans-serif;
     width: 35px;
     position: relative;
 }
@@ -74,17 +83,17 @@ header nav {
     margin-left: 10px;
 }
 
-header nav ul {
+header nav div ul {
     list-style: none;
     display: flex;
 } 
 
-header nav ul li {
+header nav div ul li {
     display: inline-block;
     margin-right: 35px;
 }
 
-header nav ul li a {
+header nav div ul li a {
     text-decoration: none;
     color: var(--color-0);
     transition: color 0.3s;
@@ -92,7 +101,7 @@ header nav ul li a {
     font-size: 1.2em;
 }
 
-header nav ul li a:hover {
+header nav div ul li a:hover {
     color: var(--color-1);
     text-decoration: underline;
 }
@@ -137,11 +146,6 @@ header nav ul li a:hover {
 
 /* Perfil */
 .perfil{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    gap: 15px;
-    padding: 10px 30px;
     height: 750px;
     background-image: url(../IMG/bg-header.jpg);
     background-size: cover;
@@ -150,7 +154,25 @@ header nav ul li a:hover {
     border-radius: 0px 0px 40px 40px;
 }
 
-.perfil .sobre .informacoes {
+.perfil .div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 10px 30px;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+}
+
+div .sobre {
+    display: block;
+    max-width: 600px;
+    height: 400px;
+}
+
+.sobre .informacoes {
     text-align: center;
 }
 
@@ -167,21 +189,21 @@ article.informacoes p {
     color: #888585;
 }
 
-.perfil .fotoDePerfil .profile-picture {
+.fotoDePerfil .profile-picture {
     box-shadow: 0px 0px 20px var(--color-1);
     max-height: 350px;
     border-radius: 20% 0 20% 0;
 }
 
-.perfil .sobre-mim {
+.sobre-mim{
     background-color: rgba(29, 16, 29, 0.409);
     border-radius: 10px;
-    max-width: 600px;
-    margin-top: 30px;
+    max-width: 500px;
     padding: 20px;
+    margin-top: 40px;
 }
 
-.perfil .sobre-mim p {
+.sobre-mim p {
     font-family: "Fira Code", monospace;
     color: #c38fe9;
     text-indent: 20px;
