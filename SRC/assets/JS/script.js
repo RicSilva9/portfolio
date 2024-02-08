@@ -1,3 +1,4 @@
+// NAV BAR
 document.addEventListener("DOMContentLoaded", function () { 
     function smoothScroll(event) {
         event.preventDefault();
@@ -33,3 +34,21 @@ toggleBtn.onclick = function () {
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars';
 };
+
+
+// CERTIFICADOS SLIDES 
+let count = 1
+document.getElementById("radio1").checked = true;
+
+setInterval(function (){
+    nextImage();
+}, 3000)
+
+function nextImage() {
+    count++;
+    if (count > 4) {
+        count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
+}

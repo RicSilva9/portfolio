@@ -147,7 +147,7 @@ header nav div ul li a:hover {
 /* Perfil */
 .perfil{
     height: 750px;
-    background-image: url(../IMG/bg-header.jpg);
+    background-image: url(../IMGs/header/bg-header.jpg);
     background-size: cover;
     align-items: center;
     box-shadow: 0px 10px 10px rgba(134, 1, 134, 0.371);

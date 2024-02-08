@@ -19,7 +19,7 @@
     /* HEADER */
     .perfil {
         min-height: 850px;
-        background-image: url(../IMG/bg-header-smartphone.jpg);
+        background-image: url(../IMGs/header/bg-header-smartphone.jpg);
         padding-top: 50px;
     }
 
@@ -64,5 +64,45 @@
 
     .perfil .sobre-mim {
     padding: 16px;
+    }
+
+    /* CERTIFICADOS */
+    .slider {
+        width: 260px;
+        height: 180px;
+    }
+
+    .slide img {
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    .manual-navigation {
+        width: 260px;
+    }
+
+    .navigation-auto {
+        width: 260px;
+    }
+
+    .manual-navigation {
+        position: absolute;
+        width: 260px;
+        margin-top: -200px;
+    }
+
+    .manual-btn {
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+    .navigation-auto div {
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+    .navigation-auto {
+        width: 260px;
+        margin-top: 150px;
     }
 }

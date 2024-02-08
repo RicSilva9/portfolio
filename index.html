@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./SRC/IMG/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./SRC/assets/favicon/favicon.ico" type="image/x-icon">
     <title>Portfólio</title>
 
-    <!-- STYLES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-    <link rel="stylesheet" href="./SRC/CSS/header.css">
-    <link rel="stylesheet" href="./SRC/CSS/skills-certificados.css">
-    <link rel="stylesheet" href="./SRC/CSS/responsive.css">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./SRC/assets/CSS/header.css">
+    <link rel="stylesheet" href="./SRC/assets/CSS/habilidades.css">
+    <link rel="stylesheet" href="./SRC/assets/CSS/responsive.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,12 +23,14 @@
                         <h1 class="r">R</h1>
                         <h1 class="s">S</h1>
                 </span>
+
                 <ul class="links" id="nav1">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#habilidades">Skills</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contatos">Contatos</a></li>
                 </ul>
+
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -45,7 +48,7 @@
         <section class="perfil" id="sobre">
             <div class="div">
                 <article class="fotoDePerfil">
-                    <img src="./SRC/IMG/foto_perfil.jpeg" alt="Foto do rosto do ricardo, ele usa uma camisa de gola alta vermelhar e o fundo branco" class="profile-picture">
+                    <img src="./SRC/assets/IMGs/header/foto_perfil.jpeg" alt="Foto do rosto do ricardo, ele usa uma camisa de gola alta vermelhar e o fundo branco" class="profile-picture">
                 </article>
                 
                 <div class="sobre">
@@ -64,44 +67,47 @@
     
     </header>
     <main>
+
         <!-- HABILIDADES -->
         <section id="habilidades" class="skills">
-            <!-- LANGS -->
 
-            <!-- FIM DAS LANGS -->
 
-            <!-- CERTIFICADOS -->
-            <div class="slides">
-                <!-- Radio Buttons -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <!-- Fim -->
-                <!-- Conteudo dos slides -->
-                <div class="slide primeira">
-                    <img src="./SRC/IMG/Certificados/equipes-ageis.jpg" alt="Certificado do curso: Trabalhando em equipes ágeis.">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    
+                    <div class="slide primeira">
+                        <img src="./SRC/assets/IMGs/Certificados/equipes-ageis.jpg" alt="Certificado do curso: Trabalhando em equipes ágeis.">
+                    </div>
+                    <div class="slide">
+                        <img src="./SRC/assets/IMGs/Certificados/Versionamento-git.jpg" alt="Certificado do curso: Versionamento de código com Git e GitHub.">
+                    </div>
+                    <div class="slide">
+                        <img src="./SRC/assets/IMGs/Certificados/conceitos-logica.jpg" alt="Certificado do curso: Conceitos básicos em lógica de programação.">
+                    </div>
+                    <div class="slide">
+                        <img src="./SRC/assets/IMGs/Certificados/Imersao-front-end.jpg" alt="Certificado do curso: Imersão Front-end.">
+                    </div>
+                    
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="./SRC/IMG/Certificados/Versionamento-git.jpg" alt="Certificado do curso: Versionamento de código com Git e GitHub.">
+                
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
-                <div class="slide">
-                    <img src="./SRC/IMG/Certificados/conceitos-logica.jpg" alt="Certificado do curso: Conceitos básicos em lógica de programação.">
-                </div>
-                <!-- Fim -->
-                <!-- navigation auto -->
-                <div class="navigation-auto">
-                    <div class="auto-bnt1"></div>
-                    <div class="auto-bnt2"></div>
-                    <div class="auto-bnt3"></div>
-                </div>
+                
             </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-            <!-- FIM DOS CERTIFICADOS -->
         </section>
         <!-- FIM DAS HABILIDADES -->
 
@@ -109,14 +115,13 @@
         </section>
         
     </main>
-    <!-- 
 
     <footer>
         <section id="contatos">
         </section>
-    </footer> -->
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="./SRC/assets/JS/script.js"></script>
 
     <!-- icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
