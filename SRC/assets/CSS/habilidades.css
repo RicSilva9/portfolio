@@ -1,10 +1,84 @@
+/* LANGS */
+.langs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.titulo-da-lang {
+    color: var(--color-0);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.langs__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    padding: 0 60px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.linguagens {
+    text-align: center;
+    width: 160px;
+    height: 180px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.linguagens p {
+    color: var(--color-0);
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.linguagens img {
+    max-height: 90px;
+}
+
+.html {
+    background-color: rgba(205, 94, 24, 0.114);
+}
+
+.css {
+    background-color: rgba(30, 162, 174, 0.168);
+}
+
+.js {
+    background-color: rgba(217, 225, 63, 0.141);
+}
+
+.github {
+    background-color: rgba(255, 255, 255, 0.127);
+}
+
+.git {
+    background-color: rgba(184, 60, 32, 0.196);
+}
 
 /* CERTIFICADOS */
 .slider {
-    margin: 30px auto;
+    margin: 40px auto;
     width: 500px;
     height: 350px;
     overflow: hidden;
+}
+
+.titulo-do-slider {
+    text-align: center;
+    color: var(--color-0);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px;
+    margin: 40px 0;
 }
 
 .slides {

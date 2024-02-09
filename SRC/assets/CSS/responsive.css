@@ -40,6 +40,18 @@
         padding: 26px;
         margin-top: 70px;
     }
+
+    /* HABILIDADES */
+    .langs__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /* HABILIDADES */
+    .langs__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -110,5 +122,23 @@
     .navigation-auto {
         width: 260px;
         margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    /* HABILIDADES */
+    .linguagens {
+        width: 100px;
+        height: 120px;
+    }
+    
+    .linguagens p {
+        color: var(--color-0);
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    
+    .linguagens img {
+        max-height: 50px;
     }
 }
