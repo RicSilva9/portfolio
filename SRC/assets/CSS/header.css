@@ -173,20 +173,24 @@ div .sobre {
 }
 
 .sobre .informacoes {
-    text-align: center;
+    width: 420px;
+    text-align: left;
 }
 
 article.informacoes h1 {
-    color: var(--color-0);
-    font-size: 2rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
-article.informacoes h1 span {
+article.informacoes p .txt--front-end {
     color: var(--color-1);
 }
 
 article.informacoes p {
-    color: #888585;
+    color: var(--color-0);
+    font-size: 1.9rem;
+    font-weight: 700;
 }
 
 .fotoDePerfil .profile-picture {

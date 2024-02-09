@@ -1,6 +1,5 @@
 @media only screen and (max-width: 835px) {
     /* NAV */
-
     .links li {
         display: none;
     }
@@ -35,7 +34,6 @@
 
     article.informacoes h1 {
         margin-top: 45px;
-        font-size: 32px;
     }
 
     .perfil .sobre-mim {
@@ -64,6 +62,14 @@
 
     .perfil .sobre-mim {
     padding: 16px;
+    }
+
+    article.informacoes h1 {
+        font-size: 1rem;
+    }
+
+    article.informacoes p {
+        font-size: 1.3rem;
     }
 
     /* CERTIFICADOS */

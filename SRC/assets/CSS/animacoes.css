@@ -1,0 +1,54 @@
+/* animacao do <p> do header */
+article.informacoes p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(192, 0, 93, 0.745);
+    animation: escrever 4s steps(40) forwards, piscar 1s infinite 4s;
+}
+  
+@keyframes escrever {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+  
+@keyframes piscar {
+    0%, 100% {
+        border-right: 2px solid rgba(192, 0, 93, 0.745);
+    }
+    50% {
+        border-right: 2px solid transparent;
+    }
+}
+
+.informacoes p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* resposividade */
+
+@media only screen and (max-width: 520px) {
+    .sobre .informacoes {
+        width: 290px;
+    }
+}
+/* Fim */
+
+/* Animação da Imagem do Perfil */
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .fotoDePerfil .profile-picture {
+    animation: moveUpDown 3s infinite ease-in-out;
+  }
+  
