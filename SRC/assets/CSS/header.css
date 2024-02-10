@@ -209,5 +209,6 @@ article.informacoes p {
 .sobre-mim p {
     font-family: "Fira Code", monospace;
     color: #c38fe9;
+    font-size: 1.1rem;
     text-indent: 20px;
 }

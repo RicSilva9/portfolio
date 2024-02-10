@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1150px) {
+    /* PROJETOS */
+    .projetos {
+        flex-direction: column-reverse;
+    }
+}
+
 @media only screen and (max-width: 835px) {
     /* NAV */
     .links li {
@@ -52,6 +59,34 @@
     .langs__content {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* PROJETOS */
+    .imagem-project {
+        width: 300px;
+        height: 180px;
+    }
+
+    .title-project h1 {
+        font-size: 1.2rem;
+    }
+
+    .description-project p {
+        font-size: 0.8rem;
+    }
+
+    .links-project {
+        max-width: 200px;
+        height: 40px;
+    }
+
+    .links-project p {
+        font-size: 1rem;
+    }
+
+    .tecnologias-project p {
+        font-size: 0.9rem;
+    }
+    
 }
 
 @media only screen and (max-width: 530px) {
@@ -140,5 +175,21 @@
     
     .linguagens img {
         max-height: 50px;
+    }
+
+    /* PROJETOS */
+    .imagem-project {
+        width: 250px;
+        height: 120px;
+        margin: auto;
+    }
+
+    .img_link-dos-projetos {
+        MAX-width: 560px;
+        height: 320px;
+    }
+
+    .title-project h1 {
+        font-size: 1rem;
     }
 }

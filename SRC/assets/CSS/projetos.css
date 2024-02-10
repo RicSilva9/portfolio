@@ -1,0 +1,158 @@
+#projetos {
+    padding: 0 50px;
+}
+
+.titulo-dos-projetos {
+    color: var(--color-0);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 260px;
+    padding: 20px;
+}
+
+.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1500px;
+    padding: 40px 20px; 
+    margin: 60px auto;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+    border: 1px solid rgb(3, 3, 3);
+    box-shadow: 0px 0px 20px #8c52ff50;
+}
+
+/* DESCRICAO */
+.descricao-dos-projetos {
+    max-width: 850px;
+    max-height: 470px;
+    /* background-color: brown; */
+}
+
+.title-project {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    /* background-color: #1f1f1f; */
+}
+
+.title-project h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.description-project {
+    max-width: 800px;
+    max-height: 340px;
+    margin: auto;
+    padding: 20px;
+    /* background-color: #1f1f1f; */
+}
+
+.description-project p {
+    color: #fff;
+    font-size: 1.3rem;
+    text-indent: 30px;
+}
+
+.tecnologias-project {
+    background-color: #313131;
+    max-width: 400px;
+    height: 40px;
+    margin: 15px auto;
+    border-radius: 10px;
+    text-align: center;
+
+    padding: 5px;
+}
+
+.tecnologias-project p {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+/* IMGS */
+.img_link-dos-projetos {
+    MAX-width: 560px;
+    height: 470px;
+    padding: 20px;
+    /* background-color: brown; */
+}
+
+.imagem-project {
+    /* muadr para max */
+    width: 500px;
+    height: 280px;
+    border-radius: 20px;
+}
+    /* imgs */
+.projeto-1 .imagem-project {
+    background-image: url(https://media.istockphoto.com/id/1385148464/es/v%C3%ADdeo/lindo-gato-de-jengibre-con-gafas-sentado-en-una-caja-sobre-un-fondo-amarillo-en-luz-de-ne%C3%B3n.jpg?s=640x640&k=20&c=p_ED3JFL4kl0Ddtko6BDqkOSJc9eeHNb2wxrE6husPI=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projeto-2 .imagem-project {
+    background-image: url(https://media.istockphoto.com/id/1323742842/es/foto/gato-gracioso-en-gafas-de-sol-gato-con-gafas-sobre-un-fondo-soleado-limpio-de-color-azul-claro.jpg?s=612x612&w=0&k=20&c=Y6_zNx-jhAI-er7MDaYkKG7FtTYVBxQTStEpH_J5Gys=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projeto-3 .imagem-project {
+    background-image: url(https://www.yazigi.com.br/galeria/repositorio/images/noticias/2019/janeiro/melhores-memes-de-2018/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.links-project {
+    max-width: 300px;
+    height: 60px;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.links-project p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* OUTROS */
+.butao-veja-mais {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.vejaMais {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.vejaMais:hover {
+    box-shadow: 0px 0px 15px #fff;
+}
+
+.github-icon {
+    font-size: 1.3rem;
+}
