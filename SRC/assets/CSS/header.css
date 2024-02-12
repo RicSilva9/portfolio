@@ -56,30 +56,11 @@ nav div {
 
     /* ITENS NAVBAR */
 .logo {
-    font-family: "Sora", sans-serif;
-    width: 35px;
+    width: 40px;
     position: relative;
 }
-
-.r, .s {
-    position: absolute;
-    left: 0;
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
-    cursor: default;
-    transform: translateY(-50%);
-}
-
-.r {
-    z-index: 1;
-    color: var(--color-0);
-}
-
-.s {
-    z-index: 2;
-    color: var(--color-1);
-    margin-left: 10px;
+.logo img {
+    max-height: 60px;
 }
 
 header nav div ul {
