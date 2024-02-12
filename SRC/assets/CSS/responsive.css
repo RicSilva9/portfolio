@@ -158,6 +158,19 @@
         width: 260px;
         margin-top: 150px;
     }
+
+    /* contatos */
+    .meioDeContato {
+        font-size: 1.5rem;
+    } 
+
+    .meioDeContato span {
+        font-size: 0.8rem;
+    }
+
+    .txt-final p {
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 470px) {

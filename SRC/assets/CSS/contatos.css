@@ -1,0 +1,68 @@
+#contatos {
+    padding: 0 10px;
+    margin: 260px auto;
+    margin-bottom: 0%;
+    max-width: 900px;
+    height: 400px;
+    background-color: #1f1f1f;
+    border: 1px solid rgb(71, 21, 120);
+    border-radius: 25% 25% 0 0;
+    box-shadow: 0px -5px 10px rgba(132, 92, 172, 0.319);
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.meioDeContato {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.meioDeContato:hover {
+    scale: 1.1;
+}
+
+.meioDeContato a {
+    color: #fff;
+    transition: all .4s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.meioDeContato span {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.txt-final {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.txt-final p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.consideracoes-finais p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #626161;
+}
+
+.consideracoes-finais a {
+    color: #b47ab6;
+    text-decoration: none;
+}
+
+.name_milky {
+    color: #b47ab6;
+}
