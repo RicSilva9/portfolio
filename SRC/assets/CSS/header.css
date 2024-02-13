@@ -8,6 +8,17 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 39, 98);
+    border-radius: 10px;
+}
+
 h1, h2, h3, p {
     cursor: default;
 }
@@ -69,6 +80,9 @@ header nav div ul {
 
 header nav div ul li {
     display: inline-block;
+}
+
+header nav div ul li:not(:last-child) {
     margin-right: 35px;
 }
 
