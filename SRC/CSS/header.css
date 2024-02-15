@@ -56,7 +56,7 @@ header nav {
     backdrop-filter: blur(15px);
 }
 
-nav div {
+nav div { 
     max-width: 1280px;
     height: 100%;
     margin: auto;
@@ -139,7 +139,7 @@ header nav div ul li a:hover {
 
 /* Perfil */
 .perfil{
-    height: 750px;
+    height: 950px;
     background-image: url(../IMGs/header/bg-header.jpg);
     background-size: cover;
     align-items: center;

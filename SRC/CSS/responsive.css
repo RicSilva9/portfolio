@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1600px) {
+    /* HEADER */
+    .perfil {
+        height: 750px;
+    }
+}
+
 @media only screen and (max-width: 1150px) {
     /* PROJETOS */
     .projetos {
