@@ -228,6 +228,6 @@
 
 @media only screen and (max-width: 470px) {
     .redes {
-        flex-direction: column;
+        font-size: 0.6rem;
     }
 }
