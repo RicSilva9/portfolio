@@ -17,9 +17,8 @@
 
 .langs__content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 800px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
     padding: 0 60px;
     border-radius: 20px;
     overflow: hidden;
@@ -62,6 +61,11 @@
 
 .git {
     background-color: rgba(184, 60, 32, 0.196);
+}
+
+.tailwind {
+    background-color: rgba(6, 115, 86, 0.168);
+
 }
 
 /* CERTIFICADOS */
@@ -110,7 +114,7 @@
 }
 
 .manual-btn {
-    border: 2px solid rgb(255, 0, 255);
+    border: 2px solid purple;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -122,7 +126,7 @@
 }
 
 .manual-btn:hover {
-    background-color: rgb(255, 0, 255);
+    background-color: purple;
 }
 
 #radio1:checked ~ .primeira {
@@ -142,7 +146,7 @@
 }
 
 .navigation-auto div {
-    border: 2px solid rgb(255, 0, 68);
+    border: 2px solid purple;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -162,17 +166,17 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: red;
+    background-color: purple;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: red;
+    background-color: purple;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: red;
+    background-color: purple;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: red;
+    background-color: purple;
 }

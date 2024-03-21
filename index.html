@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
     <!-- STYLES -->
-    <link rel="stylesheet" href="./SRC/CSS/header.css">
-    <link rel="stylesheet" href=".//SRC/CSS/habilidades.css">
-    <link rel="stylesheet" href="./SRC/CSS/projetos.css">
-    <link rel="stylesheet" href="./SRC/CSS/contatos.css">
+    <link rel="stylesheet" href="./SRC/CSS/style.css">
+    <link rel="stylesheet" href="./SRC/CSS/habilidades.css">
+    <link rel="stylesheet" href="./SRC/CSS/footer.css">
     <link rel="stylesheet" href="./SRC/CSS/animacoes.css">
     <link rel="stylesheet" href="./SRC/CSS/responsive.css">
 </head>
@@ -49,9 +48,7 @@
     </nav>
     
     <header>
-
-        <!-- PERFIL -->
-        <section class="perfil" id="sobre">
+        <section class="perfil">
             <div class="div">
                 <article class="fotoDePerfil">
                     <img src="./SRC/IMGs/header/foto_perfil.jpeg" alt="Foto do rosto do ricardo, ele usa uma camisa de gola alta vermelhar e o fundo branco" class="profile-picture">
@@ -64,18 +61,29 @@
                     </article>
                 
                     <div class="sobre-mim">
-                        <p>Oiii, me chamo Ricardo da Silva Sousa, sou um estudante de programação de 17 anos. Estudo Análise e Desenvolvimento de Sistemas na Estácio e meu objetivo é me tornar um excelente desenvolvedor, buscando constantemente aprimorar minhas habilidades e contribuir para projetos inovadores.</p>
+                        <p>Meu objetivo é me tornar um excelente desenvolvedor, buscando constantemente aprimorar minhas habilidades.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- FIM DO PERFIL -->
-    
+        </section>    
     </header>
 
     <main>
+        <section id="sobre">
+            <div>
+                <div class="imagem_sobre">
+                    <img src="./SRC/IMGs/homem_de_terno-removebg-preview.png" alt="">
+                </div>
+                <div class="texto_sobre">
+                    <h2>Sobre</h2>
+                    <p>Atualmente, com 17 anos, estudo Análise e Desenvolvimento de Sistemas (ADS) na Estácio, na modalidade EAD.</p>
+                    <p>Meu interesse pela programação começou em 2021, durante a Imersão Dev da Alura. Devido à falta de um computador, só pude começar a estudar programação no meio do ano de 2023.</p>
+                    <p>Apesar de às vezes sentir a síndrome do impostor, percebo que durante esse tempo aprendi coisas que no início pareciam muito distantes da minha realidade.</p>
+                    <p>No meu futuro, almejo trabalhar no exterior. Após alguns anos de experiência com front-end, pretendo explorar áreas como back-end e desenvolvimento mobile.</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- HABILIDADES -->
         <section id="habilidades" class="skills">
             <div class="langs">
                 <h2 class="titulo-da-lang">Tecnologias</h2>
@@ -103,6 +111,11 @@
                     <div class="git linguagens">
                         <img src="./SRC/IMGs/linguagens/Git-Icon.png" alt="Git-Image">
                         <p>Git</p>
+                    </div> 
+
+                    <div class="tailwind linguagens">
+                        <img src="./SRC/IMGs/linguagens/tailwind.png" alt="TailwindCss-Image">
+                        <p>TailwindCss</p>
                     </div> 
                 </div>
             </div>
@@ -151,90 +164,32 @@
         <!-- PROJETOS -->
         <section id="projetos">
             <h2 class="titulo-dos-projetos">Projetos</h2>
+            <projeto-card
+                lang1="./SRC/IMGs/linguagens/html.png"
+                lang2="./SRC/IMGs/linguagens/css-3.png"
+                lang3="./SRC/IMGs/linguagens/JavaScript.png"
+                lang4="./SRC/IMGs/linguagens/tailwind.png"
+                titulo="Sem Projeto definido"
+                descricao="Até o momento, ainda não foram desenvolvidos projetos que atendam aos altos padrões de qualidade para serem apresentados aqui. Estou comprometido em aprimorar minhas habilidades e criar projetos significativos que demonstrem todo o meu potencial. Assim que eu criar projetos que atendam aos critérios de excelência, estarei ansioso para compartilhá-los neste espaço. Enquanto isso, aprecie a beleza deste adorável gatinho."
+                foto="https://media.istockphoto.com/id/1385148464/es/v%C3%ADdeo/lindo-gato-de-jengibre-con-gafas-sentado-en-una-caja-sobre-un-fondo-amarillo-en-luz-de-ne%C3%B3n.jpg?s=640x640&k=20&c=p_ED3JFL4kl0Ddtko6BDqkOSJc9eeHNb2wxrE6husPI="
+            ></projeto-card>
 
-            <div class="projeto-1 projetos">
-                <section class="descricao-dos-projetos">
-                    <div class="title-project">
-                        <h1>< Projetos em Construcão ></h1>
-                    </div>
+            <projeto-card
+                lang1="./SRC/IMGs/linguagens/html.png"
+                lang2="./SRC/IMGs/linguagens/css-3.png"
+                titulo="Sem Projeto definido"
+                descricao="Até o momento, ainda não foram desenvolvidos projetos que atendam aos altos padrões de qualidade para serem apresentados aqui. Estou comprometido em aprimorar minhas habilidades e criar projetos significativos que demonstrem todo o meu potencial. Assim que eu criar projetos que atendam aos critérios de excelência, estarei ansioso para compartilhá-los neste espaço. Enquanto isso, aprecie a beleza deste adorável gatinho."
+                foto="https://media.istockphoto.com/id/1323742842/es/foto/gato-gracioso-en-gafas-de-sol-gato-con-gafas-sobre-un-fondo-soleado-limpio-de-color-azul-claro.jpg?s=612x612&w=0&k=20&c=Y6_zNx-jhAI-er7MDaYkKG7FtTYVBxQTStEpH_J5Gys="
+            ></projeto-card>
 
-                    <div class="description-project">
-                        <p>Em breve compartilharei projetos mais impressionantes. Prefiro apresentar apenas trabalhos de alta qualidade. Enquanto aguardamos, aprecie a foto de um gato. Agradeço pela compreensão.</p>
-                    </div>
-
-                    <div class="tecnologias-project">
-                        <p>< langs utilizadas ></p>
-                    </div>
-                </section>
-
-                <section class="img_link-dos-projetos">
-                    <div class="imagem-project"></div>
-
-                    <div class="links-project">
-                        <p>link repo</p>
-                    </div>
-
-                    <div class="links-project">
-                        <p>link deploy</p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="projeto-2 projetos">
-                <section class="descricao-dos-projetos">
-                    <div class="title-project">
-                        <h1>< Projetos em Construcão ></h1>
-                    </div>
-
-                    <div class="description-project">
-                        <p>Em breve compartilharei projetos mais impressionantes. Prefiro apresentar apenas trabalhos de alta qualidade. Enquanto aguardamos, aprecie a foto de um gato. Agradeço pela compreensão.</p>
-                    </div>
-
-                    <div class="tecnologias-project">
-                        <p>< langs utilizadas ></p>
-                    </div>
-                </section>
-
-                <section class="img_link-dos-projetos">
-                    <div class="imagem-project"></div>
-
-                    <div class="links-project">
-                        <p>link repo</p>
-                    </div>
-
-                    <div class="links-project">
-                        <p>link deploy</p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="projeto-3 projetos">
-                <section class="descricao-dos-projetos">
-                    <div class="title-project">
-                        <h1>< Projetos em Construcão ></h1>
-                    </div>
-
-                    <div class="description-project">
-                        <p>Em breve compartilharei projetos mais impressionantes. Prefiro apresentar apenas trabalhos de alta qualidade. Enquanto aguardamos, aprecie a foto de um gato. Agradeço pela compreensão.</p>
-                    </div>
-
-                    <div class="tecnologias-project">
-                        <p>< langs utilizadas ></p>
-                    </div>
-                </section>
-
-                <section class="img_link-dos-projetos">
-                    <div class="imagem-project"></div>
-
-                    <div class="links-project">
-                        <p>link repo</p>
-                    </div>
-
-                    <div class="links-project">
-                        <p>link deploy</p>
-                    </div>
-                </section>
-            </div>
+            <projeto-card
+                lang1="./SRC/IMGs/linguagens/html.png"
+                lang2="./SRC/IMGs/linguagens/css-3.png"
+                lang3="./SRC/IMGs/linguagens/JavaScript.png"
+                titulo="Sem Projeto definido"
+                descricao="Até o momento, ainda não foram desenvolvidos projetos que atendam aos altos padrões de qualidade para serem apresentados aqui. Estou comprometido em aprimorar minhas habilidades e criar projetos significativos que demonstrem todo o meu potencial. Assim que eu criar projetos que atendam aos critérios de excelência, estarei ansioso para compartilhá-los neste espaço. Enquanto isso, aprecie a beleza deste adorável gatinho."
+                foto="https://www.yazigi.com.br/galeria/repositorio/images/noticias/2019/janeiro/melhores-memes-de-2018/1.jpg"
+            ></projeto-card>
             
             <div class="butao-veja-mais">
                 <a href="https://github.com/RicSilva9?tab=repositories" target="_blank" class="vejaMais">Veja Mais no <ion-icon name="logo-github" class="github-icon"></ion-icon></a>
@@ -280,6 +235,7 @@
     </footer>
 
     <script src="./SRC/JS/script.js"></script>
+    <script src="./SRC/JS/projetos.js"></script>
 
     <!-- icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

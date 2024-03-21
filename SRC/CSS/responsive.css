@@ -6,9 +6,31 @@
 }
 
 @media only screen and (max-width: 1150px) {
-    /* PROJETOS */
-    .projetos {
-        flex-direction: column-reverse;
+    .imagem_sobre {
+        width: 35%;
+    }
+
+    .texto_sobre {
+        width: 65%;
+        padding-right: 40px;
+    }
+    
+    .imagem_sobre img {
+        max-height: 250px;
+    }
+
+    .texto_sobre h2 {
+        font-size: 1.4rem;
+    }
+
+    .texto_sobre p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .langs__content {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -31,7 +53,7 @@
 
     /* HEADER */
     .perfil {
-        min-height: 850px;
+        min-height: 780px;
         background-image: url(../IMGs/header/bg-header-smartphone.jpg);
         padding-top: 50px;
     }
@@ -52,7 +74,7 @@
 
     .perfil .sobre-mim {
         padding: 26px;
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     /* HABILIDADES */
@@ -61,39 +83,21 @@
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 670px) {
     /* HABILIDADES */
     .langs__content {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* PROJETOS */
-    .imagem-project {
-        width: 300px;
-        height: 180px;
+    .imagem_sobre {
+        display: none;
     }
 
-    .title-project h1 {
-        font-size: 1.2rem;
+    .texto_sobre {
+        width: 100%;
+        padding: 30px;
     }
 
-    .description-project p {
-        font-size: 0.8rem;
-    }
-
-    .links-project {
-        max-width: 200px;
-        height: 40px;
-    }
-
-    .links-project p {
-        font-size: 1rem;
-    }
-
-    .tecnologias-project p {
-        font-size: 0.9rem;
-    }
-    
 }
 
 @media only screen and (max-width: 530px) {
@@ -178,6 +182,10 @@
     .txt-final p {
         font-size: 0.8rem;
     }
+
+    .consideracoes-finais p {
+        font-size: 0.6rem;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -211,5 +219,15 @@
 
     .title-project h1 {
         font-size: 1rem;
+    }
+
+    .consideracoes-finais p {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .redes {
+        flex-direction: column;
     }
 }

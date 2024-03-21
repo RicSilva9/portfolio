@@ -1,9 +1,9 @@
 #contatos {
-    padding: 0 10px;
+    padding: 0 60px;
     margin: 260px auto;
     margin-bottom: 0%;
-    max-width: 900px;
-    height: 400px;
+    max-width: 80rem;
+    min-height: 300px;
     background-color: #1f1f1f;
     border: 1px solid rgb(71, 21, 120);
     border-radius: 25% 25% 0 0;
@@ -42,8 +42,9 @@
     color: #fff;
     font-size: 1.2rem;
 }
+
 .txt-final {
-    max-width: 500px;
+    max-width: 1000px;
     margin: 40px auto;
 }
 

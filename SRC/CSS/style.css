@@ -139,7 +139,7 @@ nav div ul li a:hover {
 
 /* Perfil */
 .perfil{
-    height: 950px;
+    height: 840px;
     background-image: url(../IMGs/header/bg-header.jpg);
     background-size: cover;
     align-items: center;
@@ -160,7 +160,10 @@ nav div ul li a:hover {
 }
 
 div .sobre {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     max-width: 600px;
     height: 400px;
 }
@@ -205,4 +208,87 @@ article.informacoes p {
     color: #c38fe9;
     font-size: 1.1rem;
     text-indent: 20px;
+}
+
+/* SOBRTE */
+#sobre {
+    width: 100%;
+    background-color: rgba(125, 4, 125, 0.056);
+}
+
+#sobre > div {
+    max-width: 80rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.imagem_sobre {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto_sobre {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.texto_sobre h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.texto_sobre p {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* projetos */
+
+#projetos {
+    padding: 0 50px;
+}
+
+.titulo-dos-projetos {
+    color: var(--color-0);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.butao-veja-mais {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.vejaMais {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.vejaMais:hover {
+    box-shadow: 0px 0px 15px #fff;
+}
+
+.github-icon {
+    font-size: 1.3rem;
 }
