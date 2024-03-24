@@ -51,6 +51,10 @@
         display: block;
     }
 
+    nav div ul {
+        gap: 0px;
+    }
+
     /* HEADER */
     .perfil {
         min-height: 780px;
@@ -172,11 +176,11 @@
 
     /* contatos */
     .meioDeContato {
-        font-size: 1.5rem;
+        font-size: 2rem;
     } 
 
     .meioDeContato span {
-        font-size: 0.8rem;
+        display: none;
     }
 
     .txt-final p {

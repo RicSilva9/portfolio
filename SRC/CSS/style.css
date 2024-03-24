@@ -76,15 +76,16 @@ nav div {
 nav div ul {
     list-style: none;
     display: flex;
+    gap: 35px;
 } 
 
 nav div ul li {
     display: inline-block;
 }
 
-nav div ul li:not(:last-child) {
+/* nav div ul li:not(:last-child) {
     margin-right: 35px;
-}
+} */
 
 nav div ul li a {
     text-decoration: none;
@@ -124,12 +125,18 @@ nav div ul li a:hover {
     height: 200px;
 }
 
+.dropdown_menu ul {
+    flex-direction: column;
+    align-items: center;
+}
+
 .dropdown_menu li {
     list-style: none;
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px;
 }
 
 .dropdown_menu li a {
